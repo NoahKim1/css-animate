@@ -1,0 +1,64 @@
+#rotate, #skew, #all, #animate{
+  border: 2px solid #000;
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 10px;
+}
+
+h3{
+  border-bottom: 1px solid #000;
+  text-align: center;
+}
+#rotate:hover {
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	transform: rotate(25deg);
+	background-color: green;
+}
+#skew {
+	background-color: lightblue;
+	transform:skew(20deg,20deg);
+}
+#all {
+	background-color: #ffff99;
+	transform: rotate(200deg);
+}
+#animate:hover {
+	width: 100px;
+	height: 100px;
+	background: red;
+	position: relative;
+	-webkit-animiation: mymove;
+	animation-name: mymove;
+	animation-duration: 4s;
+}
+@keyframes mymove {
+	from{
+		font-size: 20px;
+
+	}
+	to{
+		font-size: 30px;
+	}
+}
+
+#p {
+	display: none;
+	background-color: yellow;
+	padding: 20px
+	width: 100px;
+	height: 100px;
+}
+#p {
+	display: block;
+}
+
+#shape {
+	border: 3px solid:#000;
+	width: 500px;
+	height: 1000px;
+	display: block;	
+	margin: 10px;
+
+}
